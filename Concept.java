@@ -182,3 +182,148 @@ class Main{
         System.out.println("Sum of three integer ="+sum2);
     }
 }
+
+
+
+// You are using Java
+//array concatenation using System.arraycopy()
+import java.util.*;
+class ArrayConcatenator{
+    int[] thirdArray;
+    ArrayConcatenator(int[] firstArray,int[] secondArray){
+        int n=firstArray.length;        
+        int m=secondArray.length;
+        thirdArray=new int[n+m];
+        System.arraycopy(firstArray,0,thirdArray,0,n);
+        System.arraycopy(secondArray,0,thirdArray,n,m);
+    }
+    void printConcatenatedArray(){
+        for(int i: thirdArray){
+            System.out.println(i);
+        }
+        
+    }
+
+};
+class Main{
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+        int size1=scan.nextInt();
+        int[] firstArray=new int[size1];
+        for(int i=0;i<size1;i++){
+            firstArray[i]=scan.nextInt();
+        }
+        int size2=scan.nextInt();
+        int[] secondArray=new int[size2];
+        for(int i=0;i<size2;i++){
+            secondArray[i]=scan.nextInt();
+        }
+        ArrayConcatenator arrayConcatenator=new ArrayConcatenator(firstArray,secondArray);
+        arrayConcatenator.printConcatenatedArray();
+    }
+}
+
+
+
+
+
+
+class Test {
+    Test() {
+        System.out.println("Constructor Called");
+    }
+
+    void displayMessage() {
+        System.out.println("This is a message from the Test object.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Test testObj = new Test(); 
+        testObj.displayMessage(); 
+    }
+}
+//output
+// Constructor Called
+// This is a message from the Test object.
+
+
+
+// In Object-Oriented Programming, programs are divided into 
+//output
+// objects and classes
+
+
+
+// The return statement is always used in the ________ block.
+//output
+// function and method
+
+
+
+
+// You are using Java
+import java.util.*;
+
+class IntArrayCalculatator
+{
+    int[] a;
+    int sum;
+    double average;
+    int max;
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        a=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=s.nextInt();
+            
+        }
+        find();
+    }
+    //the above data in the {} are the initilizer block it get executeed before the main block 
+    //However static block has the highest priority and after thet initializer block and then the constructor
+    void find(){
+        sum=0;
+        max=Integer.MIN_VALUE;
+        for(int d:a){
+            sum+=d;
+            if(d>max){
+                max=d;
+            }
+        }
+        average=(double)sum/a.length;
+        
+    }
+    void displayArrayOperations(){
+        System.out.println(sum);
+        System.out.println(average);
+        System.out.println(max);
+    }
+    public static void main(String args[]){
+        IntArrayCalculatator s=new IntArrayCalculatator();
+        s.displayArrayOperations();
+    }
+}
+
+
+
+class Example{
+    Example(){
+        System.out.println("Constructor is Executed");
+    }
+    {
+        System.out.println("Initilizer block is executed");
+    }
+    static{
+        System.out.println("Static block is executed");
+    }
+    public static void main(String args[]){
+        Example s=new Example();
+    }
+}
+//Output 
+// Static block is executed
+// Initilizer block is executed
+// Constructor is Executed
