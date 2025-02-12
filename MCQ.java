@@ -71,3 +71,36 @@ class Main {
 
 
 2
+
+
+
+
+
+public class Main {
+  int a;
+  
+  public Main(int a) {
+    this.a = a;
+  }
+
+  public static void main(String[] args) {
+    Main obj = new Main(87);
+    System.out.print(obj.a);
+  }
+}
+
+
+87
+
+
+
+
+// In Java, where can you use this keyword?
+Inside both instance methods and constructors
+
+
+
+
+// What is an initializer block in Java?
+A block of code executed before constructors.
+
