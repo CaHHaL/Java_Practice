@@ -104,3 +104,42 @@ Inside both instance methods and constructors
 // What is an initializer block in Java?
 A block of code executed before constructors.
 
+
+class Test {
+    void display(int a, int b) {
+        System.out.println("Method 1");
+    }
+    void display(double a, double b) {
+        System.out.println("Method 2");
+    }
+    public static void main(String[] args) {
+        Test obj = new Test();
+        obj.display(10, 10.0);
+    }
+}
+
+//output
+//Method 2
+
+
+class Test {
+    void show(int a) {
+        System.out.println("Integer method");
+    }
+    void show(String s) {
+        System.out.println("String method");
+    }
+    public static void main(String[] args) {
+        Test obj = new Test();
+        obj.show(null);
+    }
+}
+
+//output
+//String method
+
+
+
+// Why do we use constructor overloading?
+To initialize the object in different ways
+
