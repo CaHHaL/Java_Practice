@@ -143,3 +143,59 @@ class Test {
 // Why do we use constructor overloading?
 To initialize the object in different ways
 
+public class Main {
+    public static void main(String[] args) {
+        int[] x = {120, 200, 164};
+        for(int i = 0; i < 3; i++)
+        System.out.print(x[i] + " ");
+    }
+}
+120 200 164
+
+Which of the following references the first and last element in a non-empty array?
+// trains[0] and trains[trains.length]
+
+class Main {
+    public static void main(String[] args) {
+	    int arr[] = {1,2,3,4,5};
+	    int count = 0;
+		for(int i = 0 ; i<5; i++ ) {
+		    if(arr[i]%2==0)
+		        count++;
+		}
+		System.out.print(count);
+	}
+}
+2
+
+
+Which option correctly demonstrates the legal declaration, construction, and initialization of an array?
+// int [] arr = {};
+
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int pos = 2;
+        int element = 25;
+
+        int[] newArr = new int[arr.length + 1];
+
+        for (int i = 0; i < pos; i++) {
+            newArr[i] = arr[i];
+        }
+
+        newArr[pos] = element;
+
+        for (int i = pos; i < arr.length; i++) {
+            newArr[i + 1] = arr[i];
+        }
+
+        for (int i = 0; i < newArr.length; i++) {
+            System.out.print(newArr[i] + " ");
+        }
+    }
+}10 20 25 30 40 50
+
+
+
