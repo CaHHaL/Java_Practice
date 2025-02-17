@@ -199,3 +199,27 @@ public class Main {
 
 
 
+public class Main{  
+    public static void main(String args[]){  
+        StringBuilder obj=new StringBuilder("Programming");  
+        obj.delete(1,3);  
+        System.out.print(obj);
+    }  
+} 
+//output
+// Pgramming
+
+Which of the following is true about the deleteCharAt(int index) method in StringBuilder?
+// Deletes the character at the specified index
+
+
+
+public class Main{  
+    public static void main(String args[]){  
+        StringBuilder sb=new StringBuilder("Stock");  
+        sb.replace(1,3,"Market");  
+        System.out.print(sb);
+    }  
+}  
+//output
+// SMarketck
