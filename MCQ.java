@@ -153,7 +153,7 @@ public class Main {
 120 200 164
 
 Which of the following references the first and last element in a non-empty array?
-// trains[0] and trains[trains.length]
+// trains[0] and trains[trains.length-1]
 
 class Main {
     public static void main(String[] args) {
@@ -223,3 +223,34 @@ public class Main{
 }  
 //output
 // SMarketck
+
+
+
+class Main {   
+    public static void main(String args[]) { 
+        String s1 = "Hello i love java";
+        String s2 = new String(s1);            		
+        System.out.println((s1 == s2) + " " + s1.equals(s2));         	
+    }    
+}
+//output
+// false true 
+
+public class Main {
+    public static void main(String[] args) {
+        String myStr = "The more he thought about it, the more he realized that he needed to make a decision.";
+        System.out.println(myStr.lastIndexOf("he"));
+        System.out.println(myStr.lastIndexOf("He"));
+    }
+}
+// output
+// 56
+// -1
+
+
+
+
+Select the default constructor for the string class.
+// String s = new String();
+
+
