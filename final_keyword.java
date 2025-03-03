@@ -31,3 +31,30 @@ class Main{
        System.out.println(PI);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Main{
+    public static void main(String agrs[]){
+       final StringBuilder sb=new StringBuilder("hello");
+       System.out.println(sb);
+       sb.insert(2,"java");
+       sb.append("version");
+       //final allows modification of string 
+       System.out.println(sb);
+    //   sb=new StringBuilder("hello");
+    //     System.out.println(sb);
+    //error with this two lines because it prevent reassignment of the stringbuilder class
+    
+    }
+}
