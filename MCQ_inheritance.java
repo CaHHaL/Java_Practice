@@ -225,3 +225,47 @@ public class Main {
 
 
 
+class Main {
+	public static void main(String[] args) {
+		
+		Object obj = new String("Test");
+        boolean check = obj instanceof String;
+        System.out.println(check);
+        
+        Object obj1 = "123";
+        boolean check1 = obj1 instanceof Number;
+        System.out.println(check1);
+
+	}
+}
+//true false
+
+
+
+Which of the following is true about a final method in Java?
+//It cannot be overridden in subclasses
+
+
+In Java, where can you use the final keyword?
+//With variables, methods, and classes
+
+
+What is the difference between super() and this() in a constructor?
+//super() is used to call the constructor of the superclass, and this() is used to call the constructor of the current class
+
+
+What is the purpose of the 'instanceof' operator in Java?
+//"To check if an object is an instance of a specific class, subclass, or interface."
+
+
+Which of the following is true about the super keyword in Java?
+//It can be used to call overridden methods of the superclass
+
+
+
+What is the purpose of using super() in a constructor?
+//To call the constructor of the superclass
+
+
+When should the 'super' keyword be used in Java?
+//To access(refer) the parent class of a subclass
